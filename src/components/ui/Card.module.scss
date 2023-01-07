@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.card {
+    position: relative;
+    height: 23rem;
+    width: 90%;
+    min-width: 18rem;
+    max-width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grayish-blue;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 376px) {
+    .card {
+        width: 90%;
+        max-width: 34rem;
+    }
+}

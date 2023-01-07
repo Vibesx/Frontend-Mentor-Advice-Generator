@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.button {
+    position: absolute;
+    bottom: -1.75rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $neon-green;
+    border-radius: 50px;
+    border: 0;
+    transition: box-shadow .4s;
+    img {
+        transition: transform 1s ease-in-out, height .4s, width .4s;
+        will-change: transform, height, width;
+        width: 50%;
+        height: 40%;
+    }
+}
+
+.button:hover {
+    box-shadow: 0 0 30px $neon-green;
+    cursor: pointer;
+    img {
+        transform: rotate(1080deg);
+        width: 60%;
+        height: 50%;
+    }
+}
