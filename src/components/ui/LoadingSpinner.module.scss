@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.spinner {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.spinner::after {
+    content: ' ';
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 8px;
+    border: 6px solid $neon-green;
+    border-color: $neon-green transparent $neon-green transparent;
+    border-radius: 50%;
+    animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
